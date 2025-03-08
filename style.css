@@ -1,125 +1,125 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap");
-
-:root {
-    --main-bg: #0f1923;
-    --accent: #4ecca3;
-    --text-primary: #e2e8f0;
-    --text-secondary: #a0aec0;
-    --header-bg: #131c29;
-    --footer-bg: #0a1017;
-    --border-color: #2a4858;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--main-bg);
-    color: var(--text-primary);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: "Pretendard", sans-serif;
-    line-height: 1.6;
-}
-
-:root {
-    padding: 0;
-    margin: 0;
+    font-family: 'Quantico', sans-serif;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #fff;
+    min-height: 100vh;
 }
 
 header {
-    background-color: var(--header-bg);
-    border-bottom: 2px solid var(--accent);
-    padding: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    backdrop-filter: blur(10px);
 }
 
 header h1 {
-    text-align: left;
-    padding: 1.5rem;
-    font-family: "Quantico", sans-serif;
+    font-family: 'Quantico', sans-serif;
     font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--accent);
-    text-shadow: 0 0 10px rgba(78, 204, 163, 0.3);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+section {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, 
+.img6:hover, .img7:hover, .img8:hover, .img9:hover {
+    transform: translateY(-5px);
+}
+
+.title h2 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #a5a5a5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.info p {
+    color: #aaa;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img_horizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 .img_horizontal img {
-    width: 95%;
-    max-width: 1000px;
+    width: 100%;
     height: auto;
-    border: 2px solid var(--border-color);
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
 .img_horizontal img:hover {
-    transform: scale(1.02);
-}
-
-.img_vertical img {
-    width: 95%;
-    max-width: 600px;
-    height: auto;
-    border: 2px solid var(--border-color);
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.img_vertical img:hover {
-    transform: scale(1.02);
-}
-
-.title {
-    font-size: 1.2rem;
-    margin: 1rem 0 0.5rem;
-    font-family: "Quantico", sans-serif;
-    color: var(--accent);
-    font-weight: 700;
-}
-
-.info {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin: 0.25rem 0;
-    padding: 0;
+    transform: scale(1.03);
 }
 
 footer {
-    background-color: var(--footer-bg);
-    font-size: 0.8rem;
-    color: #4a7a72;
-    margin: 0;
-    padding: 1.5rem;
-    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    backdrop-filter: blur(10px);
+    margin-top: 3rem;
 }
 
 footer a {
-    color: var(--accent);
+    color: #fff;
     text-decoration: none;
-    transition: color 0.2s ease;
+    font-size: 1.1rem;
+    margin: 0 1rem 1rem;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #6adfba;
-    text-decoration: underline;
+    color: #aaa;
 }
 
-/* 이미지 컨테이너에 게임 느낌 추가 */
-.img_horizontal, .img_vertical {
-    margin: 2rem auto;
-    position: relative;
-    padding: 1rem;
+footer a i {
+    margin-right: 0.5rem;
 }
 
-/* 페이지 섹션 구분을 위한 스타일 */
-section {
-    margin: 3rem 0;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: rgba(27, 38, 53, 0.5);
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+footer p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .img_horizontal {
+        grid-template-columns: 1fr;
+    }
+    
+    .title h2 {
+        font-size: 1.5rem;
+    }
 }
