@@ -2,7 +2,7 @@
 
 <img src="https://github.com/user-attachments/assets/b7c21fa3-100e-4472-a869-87634e8548b6">
 
-Share My Game Screenshots By webpage
+### Share My Game Screenshots By webpage
 
 # Detail Shot 📷
 <p algin="center">
